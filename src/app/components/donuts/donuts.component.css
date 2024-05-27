@@ -1,0 +1,20 @@
+.donut-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.donut-item {
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+.donut-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
