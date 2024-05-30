@@ -20,7 +20,9 @@ export class DonutsComponent implements OnInit {
 
   ngOnInit(): void {
     this.donutService.getDonuts().subscribe((data) => {
-      this.donuts = data;
+      this.donuts = data.results;
+      
+    console.log("response->",this.donuts);  
     });
   }
 }

@@ -11,4 +11,7 @@ import { FamousPerson } from '../../interfaces/famous-person';
 })
 export class FamousPersonRowComponent {
   @Input() person!: FamousPerson;
+famousPeople: any;
+famous: any;
+famousPerson: any;
 }

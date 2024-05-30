@@ -1,4 +1,8 @@
 <h2>Donuts</h2>
 <div class="donut-list">
-  <app-donut-item *ngFor="let donut of donuts" [donut]="donut"></app-donut-item>
+<div *ngIf="donuts.length!=0">\
+  <div *ngFor="let d of donuts">
+  <app-donut-item [donut]="d"></app-donut-item>
+  </div>
+  </div>
 </div>

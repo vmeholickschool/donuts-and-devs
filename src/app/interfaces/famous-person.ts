@@ -6,3 +6,8 @@ export interface FamousPerson {
     year: number;
   }
   
+  export interface HallOfFameResponse {
+    complete: FamousPerson[];
+    filter(arg0: (person: any) => any): FamousPerson[];
+    famousPeople: FamousPerson[];
+  }

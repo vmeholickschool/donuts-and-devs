@@ -15,12 +15,15 @@ import { FamousPersonRowComponent } from '../famous-person-row/famous-person-row
 })
 export class FamousPeopleComponent implements OnInit {
   famousPeople: FamousPerson[] = [];
+person: any;
+
 
   constructor(private hallOfFameService: HallOfFameService) {}
 
   ngOnInit(): void {
     this.hallOfFameService.getFamousPeople().subscribe((data) => {
-      this.famousPeople = data.filter((person) => person.isFamous);
+      this.famousPeople = data.complete; // Ensure correct data extraction
+      console.log("response->", this.famousPeople);
     });
   }
 }

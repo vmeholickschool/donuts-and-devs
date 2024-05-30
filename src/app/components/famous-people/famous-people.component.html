@@ -1,16 +1,12 @@
 <h2>Famous People in Computing</h2>
 <div class="table-container">
+ 
+   
   <table>
-    <thead>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Innovation</th>
-        <th>Year</th>
-      </tr>
-    </thead>
+    
     <tbody>
       <app-famous-person-row *ngFor="let person of famousPeople" [person]="person"></app-famous-person-row>
     </tbody>
   </table>
 </div>
+

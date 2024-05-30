@@ -5,3 +5,7 @@ export interface Donut {
     name: string;
   }
   
+  export interface DonutResponse {
+  count: number;
+  results: Donut[];
+  }
